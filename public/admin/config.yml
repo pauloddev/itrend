@@ -15,8 +15,8 @@ backend:
 local_backend: true
 
 locale: pt
-site_url: https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app
-display_url: https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app
+site_url: https://itrend.vercel.app
+display_url: https://itrend.vercel.app
 logo_url: /img/logo-itrend.svg
 media_folder: public/uploads
 public_folder: /uploads
