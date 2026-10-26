@@ -1079,3 +1079,5 @@ ul { margin: 0; padding: 0; list-style: none; }
   .fab-ig { padding: 6px; font-size: 0; gap: 0; }
   .fab-ig .ico { width: 44px; height: 44px; background: transparent; }
 }
+.hours-note { display: inline-flex; align-items: center; gap: 8px; margin: 2px 0 8px; padding: 8px 14px; border-radius: 999px; background: var(--o-50); color: var(--o-700); font-weight: 700; font-size: .9375rem; justify-self: start; }
+.hours-note svg { width: 18px; height: 18px; flex: none; }

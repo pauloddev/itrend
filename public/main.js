@@ -214,7 +214,7 @@
       const mins = (Number(get('hour')) % 24) * 60 + Number(get('minute'));
       const row = hours.querySelector(`[data-day="${dayIdx}"]`);
       if (row) row.classList.add('today');
-      const close = dayIdx === 0 ? 12 * 60 : 18 * 60 + 30; // dom. até 12:00, seg. a sáb. até 18:30
+      const close = dayIdx === 0 ? 12 * 60 + 30 : dayIdx === 6 ? 18 * 60 + 30 : 19 * 60; // dom. até 12:30, sáb. até 18:30, seg. a sex. até 19:00 (sem fechar para almoço)
       const open = mins >= 8 * 60 && mins < close;
       const st = hours.querySelector('[data-status]');
       st.textContent = open ? 'Aberto agora' : 'Fechado agora';
