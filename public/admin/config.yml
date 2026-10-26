@@ -1,15 +1,19 @@
 # Painel de administração da iTrend (Decap CMS)
 #
-# ⚠️ LOGIN COM E-MAIL E SENHA: substitua o bloco "backend" abaixo pelo que o
-# DecapBridge gera para você (passo a passo no README, seção 6).
+# Login com e-mail e senha pelo DecapBridge (classic)
 backend:
-  name: github
+  name: git-gateway
   repo: pauloddev/itrend
   branch: main
+  identity_url: https://auth.decapbridge.com/sites/d79fc9c0-d741-4f21-b1ae-7e6e74b72752
+  gateway_url: https://gateway.decapbridge.com
   commit_messages:
-    update: "Painel: atualiza {{collection}} ({{slug}})"
-    uploadMedia: "Painel: envia {{path}}"
-    deleteMedia: "Painel: remove {{path}}"
+    create: "Painel: cria {{collection}} “{{slug}}” - {{author-name}} via DecapBridge"
+    update: "Painel: atualiza {{collection}} “{{slug}}” - {{author-name}} via DecapBridge"
+    delete: "Painel: remove {{collection}} “{{slug}}” - {{author-name}} via DecapBridge"
+    uploadMedia: "Painel: envia “{{path}}” - {{author-name}} via DecapBridge"
+    deleteMedia: "Painel: apaga “{{path}}” - {{author-name}} via DecapBridge"
+    openAuthoring: "{{message}} - {{author-name}} via DecapBridge"
 
 # Para testar no seu computador: npx decap-server e abra http://localhost:3000/admin/
 local_backend: true
