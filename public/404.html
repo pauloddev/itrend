@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Página não encontrada | iTrend</title>
+  <meta name="description" content="Esta página não existe. Volte para a página inicial da iTrend ou fale com a gente pelo WhatsApp.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#2E1DDD">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .nf { min-height: 100dvh; display: grid; place-items: center; padding: 32px var(--gutter); text-align: center; position: relative; overflow: hidden; }
+    .nf::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image: linear-gradient(rgba(46,29,221,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(46,29,221,.06) 1px, transparent 1px);
+      background-size: 48px 48px; -webkit-mask-image: radial-gradient(circle at 50% 45%, #000 10%, transparent 65%); mask-image: radial-gradient(circle at 50% 45%, #000 10%, transparent 65%); }
+    .nf-inner { position: relative; display: grid; gap: 20px; justify-items: center; max-width: 560px; }
+    .nf-code { font-family: var(--font-display); font-weight: 700; font-size: clamp(4.5rem, 3rem + 8vw, 8rem); line-height: 1; letter-spacing: -0.05em; }
+    .nf .brand img { width: 150px; }
+  </style>
+</head>
+<body>
+  <main class="nf">
+    <div class="nf-inner">
+      <a class="brand" href="/" aria-label="iTrend, página inicial">
+        <img src="/img/logo-itrend.svg" width="492" height="275" alt="iTrend">
+      </a>
+      <p class="nf-code grad-text" aria-hidden="true">404</p>
+      <h1 class="h-section">Ops! Esta página não existe.</h1>
+      <p class="lead">O link pode estar errado ou a página mudou de lugar. Mas o seu próximo celular continua te esperando na iTrend.</p>
+      <div class="btn-row" style="justify-content:center">
+        <a class="btn btn-primary" href="/">Voltar para o início</a>
+        <a class="btn btn-wa" href="https://wa.me/5595991383639" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.86 9.86 0 0 0 12.04 2Zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.06 0 1.22.89 2.39 1.01 2.56.12.16 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29Z"/></svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

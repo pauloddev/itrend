@@ -1,0 +1,9 @@
+{
+  "name": "itrend-landing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Landing page iTrend (site estático para Vercel)",
+  "scripts": {
+    "set-url": "node scripts/set-site-url.mjs"
+  }
+}
