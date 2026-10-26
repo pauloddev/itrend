@@ -1,0 +1,104 @@
+{
+  "etiqueta": "Clientes satisfeitos",
+  "titulo": "Gente feliz saindo de",
+  "destaque": "celular novo.",
+  "texto": "Todo dia tem cliente estreando celular na iTrend. Cada foto aqui é uma história real de quem confiou na gente.",
+  "lista": [
+    {
+      "destaque": "Atendimento atencioso",
+      "texto": "na loja ou pelo WhatsApp."
+    },
+    {
+      "destaque": "Confiança e segurança",
+      "texto": "do primeiro contato ao pós-venda."
+    },
+    {
+      "destaque": "Condições que cabem no bolso",
+      "texto": ": até 21x ou boleto."
+    }
+  ],
+  "botao": "Seja o próximo",
+  "mensagem_whatsapp": "Olá, iTrend! Quero comprar um celular.",
+  "foto_destaque": "/img/clientes/cliente-destaque-600.jpg",
+  "foto_destaque_descricao": "Cliente com seu iPhone novo e a sacola da iTrend em frente ao letreiro da loja",
+  "selo_foto": "Cliente iTrend",
+  "foto_2": "/img/clientes/cliente-01-600.jpg",
+  "foto_2_descricao": "Cliente sorrindo com seu iPhone laranja e a sacola da iTrend",
+  "foto_3": "/img/clientes/cliente-02-600.jpg",
+  "foto_3_descricao": "Cliente com seu novo Poco C85 e uma capinha",
+  "titulo_carrossel": "Mais clientes iTrend",
+  "carrossel": [
+    {
+      "foto": "/img/clientes/cliente-03-600.jpg",
+      "descricao_foto": "Cliente com seu Galaxy A17 em frente ao letreiro da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-04-600.jpg",
+      "descricao_foto": "Cliente sorrindo com seu novo iPhone e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-05-600.jpg",
+      "descricao_foto": "Cliente com seu novo Poco e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-06-600.jpg",
+      "descricao_foto": "Cliente sorrindo com seu novo celular azul e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-07-600.jpg",
+      "descricao_foto": "Cliente mostrando a caixa do seu novo Poco X7"
+    },
+    {
+      "foto": "/img/clientes/cliente-08-600.jpg",
+      "descricao_foto": "Cliente com a caixa do seu Redmi A5 e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-09-600.jpg",
+      "descricao_foto": "Cliente mostrando seu novo Poco C71"
+    },
+    {
+      "foto": "/img/clientes/cliente-10-600.jpg",
+      "descricao_foto": "Cliente sorrindo com seu novo iPhone branco"
+    },
+    {
+      "foto": "/img/clientes/cliente-11-600.jpg",
+      "descricao_foto": "Casal comemorando o novo iPhone na loja"
+    },
+    {
+      "foto": "/img/clientes/cliente-12-600.jpg",
+      "descricao_foto": "Cliente com a caixa do seu novo iPad e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-13-600.jpg",
+      "descricao_foto": "Cliente com seu novo Poco X7 Pro"
+    },
+    {
+      "foto": "/img/clientes/cliente-14-600.jpg",
+      "descricao_foto": "Cliente com seu iPhone lilás e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-15-600.jpg",
+      "descricao_foto": "Cliente com seu novo iPhone branco e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-16-600.jpg",
+      "descricao_foto": "Casal de clientes com celular novo na loja"
+    },
+    {
+      "foto": "/img/clientes/cliente-17-600.jpg",
+      "descricao_foto": "Casal de clientes sorrindo com o novo iPhone laranja"
+    },
+    {
+      "foto": "/img/clientes/cliente-18-600.jpg",
+      "descricao_foto": "Cliente com seu novo iPhone laranja e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-19-600.jpg",
+      "descricao_foto": "Mãe e filha com o celular novo e a sacola da iTrend"
+    },
+    {
+      "foto": "/img/clientes/cliente-20-480.jpg",
+      "descricao_foto": "Cliente sorrindo com seu novo iPhone e a sacola da iTrend"
+    }
+  ]
+}

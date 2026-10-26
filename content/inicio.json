@@ -1,0 +1,69 @@
+{
+  "etiqueta": "Boa Vista • RR",
+  "titulo_marca": "ITREND",
+  "titulo_destaque": "Conecte-se com o Futuro!",
+  "marcas": [
+    "Xiaomi",
+    "Apple",
+    "Samsung"
+  ],
+  "texto": "Quando o assunto é Apple e Xiaomi, a gente não entrega só um produto… Entrega confiança, segurança e uma experiência que faz você ter certeza de que escolheu o lugar certo.",
+  "botao": "Comprar pelo WhatsApp",
+  "mensagem_whatsapp": "Olá, iTrend! Quero comprar um celular.",
+  "botao_instagram": "Ver no Instagram",
+  "selos": [
+    {
+      "icone": "i-card",
+      "texto": "Até 21x no cartão"
+    },
+    {
+      "icone": "i-barcode",
+      "texto": "Agora no boleto"
+    },
+    {
+      "icone": "i-wrench",
+      "texto": "Assistência técnica"
+    }
+  ],
+  "chips": [
+    {
+      "destaque": "Até 21x",
+      "texto": "no cartão"
+    },
+    {
+      "destaque": "Boleto",
+      "texto": "sem cartão"
+    },
+    {
+      "destaque": "1 ano",
+      "texto": "de garantia*"
+    }
+  ],
+  "chamadas": [
+    {
+      "icone": "i-mobile",
+      "titulo": "Smartphones",
+      "texto": "Xiaomi, Apple e Samsung."
+    },
+    {
+      "icone": "i-headphone",
+      "titulo": "Acessórios",
+      "texto": "Capinhas, cabos, fones e mais."
+    },
+    {
+      "icone": "i-wrench",
+      "titulo": "Consertos",
+      "texto": "Assistência rápida e confiável."
+    },
+    {
+      "icone": "i-card",
+      "titulo": "Até 21x",
+      "texto": "no cartão de crédito."
+    },
+    {
+      "icone": "i-barcode",
+      "titulo": "Boleto",
+      "texto": "Compre seu celular sem cartão."
+    }
+  ]
+}

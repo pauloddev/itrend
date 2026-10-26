@@ -1,0 +1,158 @@
+{
+  "etiqueta": "Acessórios",
+  "titulo": "Tudo para o seu celular",
+  "destaque": "render mais.",
+  "texto": "Carregadores, cabos, power banks, fones e caixas de som. Fazemos entregas para toda a cidade.",
+  "grupos": [
+    {
+      "titulo": "Energia: carregadores e power banks",
+      "itens": [
+        {
+          "foto": "/img/acessorios/carregador-veicular-600.jpg",
+          "nome": "Carregador veicular",
+          "detalhe": "Turbo para o carro",
+          "descricao_foto": "Dois carregadores veiculares Peining nas embalagens"
+        },
+        {
+          "foto": "/img/acessorios/carregador-turbo-600.jpg",
+          "nome": "Carregador turbo",
+          "detalhe": "Tipo C, até 35W",
+          "descricao_foto": "Carregadores turbo Peining 35W e Kdpan 20W tipo C"
+        },
+        {
+          "foto": "/img/acessorios/kit-carregador-600.jpg",
+          "nome": "Kit carregador",
+          "detalhe": "USB e iOS",
+          "descricao_foto": "Kits de carregador Peining USB e iOS"
+        },
+        {
+          "foto": "/img/acessorios/carregador-cabo-tipo-c-600.jpg",
+          "nome": "Carregador e cabo",
+          "detalhe": "Tipo C para tipo C",
+          "descricao_foto": "Carregador e cabo Hard Pro tipo C da Eskilo"
+        },
+        {
+          "foto": "/img/acessorios/adaptador-ios-600.jpg",
+          "nome": "Adaptador iOS",
+          "detalhe": "Lightning para fone",
+          "descricao_foto": "Adaptador Lightning para fone Peining na embalagem"
+        },
+        {
+          "foto": "/img/acessorios/power-bank-20000-600.jpg",
+          "nome": "Power bank 20.000 mAh",
+          "detalhe": "22,5W com cabos",
+          "descricao_foto": "Power bank Peining 20.000 mAh com dois cabos"
+        },
+        {
+          "foto": "/img/acessorios/power-bank-multiplas-saidas-600.jpg",
+          "nome": "Power bank 20.000 mAh",
+          "detalhe": "Múltiplas saídas",
+          "descricao_foto": "Power bank H’Maston 20.000 mAh com múltiplas saídas"
+        },
+        {
+          "foto": "/img/acessorios/power-bank-solar-600.jpg",
+          "nome": "Power bank solar",
+          "detalhe": "10.000 mAh",
+          "descricao_foto": "Power bank solar Peining 10.000 mAh"
+        },
+        {
+          "foto": "/img/acessorios/power-bank-10000-600.jpg",
+          "nome": "Power bank 10.000 mAh",
+          "detalhe": "Com carga sem fio",
+          "descricao_foto": "Power bank Peining 10.000 mAh com carga sem fio"
+        },
+        {
+          "foto": "/img/acessorios/power-bank-magnetico-600.jpg",
+          "nome": "Power bank magnético",
+          "detalhe": "5.000 mAh",
+          "descricao_foto": "Power bank magnético A’Gold 5.000 mAh"
+        },
+        {
+          "foto": "/img/acessorios/power-bank-magnetico-wup-600.jpg",
+          "nome": "Power bank magnético",
+          "detalhe": "22,5W e 15W",
+          "descricao_foto": "Power bank magnético Peining 5.000 mAh"
+        },
+        {
+          "foto": "/img/acessorios/power-banks-mini-600.jpg",
+          "nome": "Power bank mini",
+          "detalhe": "Leve na bolsa",
+          "descricao_foto": "Power banks compactos A’Gold e Kaidi"
+        }
+      ]
+    },
+    {
+      "titulo": "Som e muito mais",
+      "itens": [
+        {
+          "foto": "/img/acessorios/headphone-600.jpg",
+          "nome": "Headphone",
+          "detalhe": "Sem fio",
+          "descricao_foto": "Headphone Peining sem fio na embalagem"
+        },
+        {
+          "foto": "/img/acessorios/caixa-de-som-600.jpg",
+          "nome": "Caixa de som",
+          "detalhe": "Portátil e resistente à água",
+          "descricao_foto": "Caixa de som A’Gold SM-22 resistente à água"
+        },
+        {
+          "foto": "/img/acessorios/fone-tws-p9010-600.jpg",
+          "nome": "Fone TWS",
+          "detalhe": "Bluetooth",
+          "descricao_foto": "Fone de ouvido TWS Peining P9010"
+        },
+        {
+          "foto": "/img/acessorios/fone-tws-tg906-600.jpg",
+          "nome": "Fone TWS",
+          "detalhe": "Estojo compacto",
+          "descricao_foto": "Fone de ouvido TWS Peining TG906"
+        },
+        {
+          "foto": "/img/acessorios/fone-earphone-m038-600.jpg",
+          "nome": "Earphone",
+          "detalhe": "Encaixe na orelha",
+          "descricao_foto": "Earphone Peining M038 com estojo"
+        },
+        {
+          "foto": "/img/acessorios/fone-esportivo-600.jpg",
+          "nome": "Fone esportivo",
+          "detalhe": "Para treinar",
+          "descricao_foto": "Fone sem fio esportivo A’Gold FN-B21B"
+        },
+        {
+          "foto": "/img/acessorios/fone-sem-fio-bt3-600.jpg",
+          "nome": "Fone sem fio",
+          "detalhe": "Com capa protetora",
+          "descricao_foto": "Fone sem fio A’Gold Pro FN-BT3 com capa protetora"
+        },
+        {
+          "foto": "/img/acessorios/fone-unicornio-600.jpg",
+          "nome": "Fone unicórnio",
+          "detalhe": "Com LED colorido",
+          "descricao_foto": "Fone de ouvido unicórnio com LED colorido"
+        },
+        {
+          "foto": "/img/acessorios/fone-gatinho-600.jpg",
+          "nome": "Fone gatinho",
+          "detalhe": "Sem fio",
+          "descricao_foto": "Fone de ouvido rosa com orelhinhas de gato"
+        },
+        {
+          "foto": "/img/acessorios/bastao-de-luz-600.jpg",
+          "nome": "Bastão de luz",
+          "detalhe": "RGB profissional",
+          "descricao_foto": "Bastão de luz RGB profissional na embalagem"
+        },
+        {
+          "foto": "/img/acessorios/garrafa-termica-600.jpg",
+          "nome": "Garrafa térmica",
+          "detalhe": "1 litro",
+          "descricao_foto": "Garrafa térmica roxa de 1 litro"
+        }
+      ]
+    }
+  ],
+  "botao": "Pedir acessório no WhatsApp",
+  "mensagem_whatsapp": "Olá, iTrend! Quero saber sobre acessórios."
+}

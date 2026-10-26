@@ -1,0 +1,74 @@
+{
+  "etiqueta": "Assistência técnica",
+  "titulo": "Assistência rápida",
+  "destaque": "e confiável.",
+  "texto": "Consertos e manutenção para celulares. Conte o que aconteceu pelo WhatsApp e a gente te orienta.",
+  "botao": "Pedir orçamento",
+  "mensagem_whatsapp": "Olá, iTrend! Preciso de assistência técnica para o meu celular.",
+  "foto": "/img/assistencia-tela-600.png",
+  "foto_descricao": "Dois celulares, um com a tela quebrada e outro com a tela nova",
+  "selo_1": "Rápida",
+  "selo_2": "Confiável",
+  "servicos": [
+    {
+      "icone": "i-screen",
+      "titulo": "Troca de tela",
+      "texto": "Tela quebrada, manchada ou sem toque."
+    },
+    {
+      "icone": "i-battery",
+      "titulo": "Troca de bateria",
+      "texto": "Seu celular volta a durar o dia todo."
+    },
+    {
+      "icone": "i-plug",
+      "titulo": "Conector de carga",
+      "texto": "Não carrega ou só carrega em uma posição."
+    },
+    {
+      "icone": "i-back",
+      "titulo": "Vidro traseiro",
+      "texto": "Tampa traseira trincada como nova."
+    },
+    {
+      "icone": "i-camera",
+      "titulo": "Câmera traseira",
+      "texto": "Foto sem foco, manchada ou sem imagem."
+    },
+    {
+      "icone": "i-selfie",
+      "titulo": "Câmera frontal",
+      "texto": "Selfies e chamadas de vídeo nítidas."
+    },
+    {
+      "icone": "i-lens",
+      "titulo": "Lente da câmera",
+      "texto": "Vidro da lente trincado ou riscado."
+    },
+    {
+      "icone": "i-speaker",
+      "titulo": "Alto-falante",
+      "texto": "Som baixo, chiado ou sem áudio."
+    },
+    {
+      "icone": "i-mic",
+      "titulo": "Microfone",
+      "texto": "Quando ninguém consegue te ouvir."
+    },
+    {
+      "icone": "i-button",
+      "titulo": "Botões",
+      "texto": "Power, volume e silencioso."
+    },
+    {
+      "icone": "i-drop",
+      "titulo": "Celular molhado",
+      "texto": "Limpeza e tratamento após contato com água."
+    },
+    {
+      "icone": "i-chip",
+      "titulo": "Placa e software",
+      "texto": "Diagnóstico, reparo de placa e atualização."
+    }
+  ]
+}

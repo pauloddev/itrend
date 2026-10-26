@@ -1,2 +1,8 @@
 .DS_Store
 node_modules/
+# gerados pelo build (npm run build), não editar à mão
+public/index.html
+public/robots.txt
+public/sitemap.xml
+public/img/u/
+public/video/u/

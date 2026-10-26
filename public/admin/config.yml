@@ -1,0 +1,231 @@
+# Painel de administração da iTrend (Decap CMS)
+#
+# ⚠️ LOGIN COM E-MAIL E SENHA: substitua o bloco "backend" abaixo pelo que o
+# DecapBridge gera para você (passo a passo no README, seção 6).
+backend:
+  name: github
+  repo: pauloddev/itrend
+  branch: main
+  commit_messages:
+    update: "Painel: atualiza {{collection}} ({{slug}})"
+    uploadMedia: "Painel: envia {{path}}"
+    deleteMedia: "Painel: remove {{path}}"
+
+# Para testar no seu computador: npx decap-server e abra http://localhost:3000/admin/
+local_backend: true
+
+locale: pt
+site_url: https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app
+display_url: https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app
+logo_url: /img/logo-itrend.svg
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: site
+    label: "Conteúdo do site"
+    label_singular: "Seção"
+    description: "Cada item é uma parte do site. Depois de publicar, o site atualiza em cerca de 1 minuto."
+    editor:
+      preview: false
+    files:
+      - name: geral
+        label: "⚙️ Dados da loja e horário"
+        file: content/geral.json
+        description: "Telefone, WhatsApp, endereço, horário e dados para o Google."
+        fields:
+          - { name: nome_loja, label: "Nome da loja", widget: string }
+          - { name: telefone, label: "Telefone (como aparece no site)", widget: string }
+          - { name: whatsapp, label: "Número do WhatsApp (só números, com 55 e DDD)", widget: string, hint: "Exemplo: 5595991383639" }
+          - { name: mensagem_whatsapp, label: "Mensagem padrão do WhatsApp", widget: string }
+          - { name: email, label: "E-mail", widget: string }
+          - { name: instagram, label: "Instagram (sem @)", widget: string }
+          - { name: endereco_rua, label: "Endereço: rua e número", widget: string }
+          - { name: endereco_complemento, label: "Endereço: bairro, cidade, estado e CEP", widget: string }
+          - { name: endereco_mapa, label: "Endereço completo para o mapa", widget: string, hint: "Usado para posicionar o mapa e o botão Como chegar." }
+          - { name: bairro, label: "Bairro", widget: string }
+          - { name: cidade, label: "Cidade", widget: string }
+          - { name: estado, label: "Estado (sigla)", widget: string }
+          - { name: cep, label: "CEP", widget: string }
+          - { name: aviso_horario, label: "Aviso ao lado do horário", widget: string, hint: "Ex.: Não fechamos para almoço. Deixe vazio para não mostrar." }
+          - { name: horarios, label: "Horário de funcionamento", widget: list, summary: "{{fields.dia}}: {{fields.abre}} às {{fields.fecha}}", fields: [{ name: dia, label: "Dia", widget: string, hint: "Ex.: Segunda-feira" }, { name: abre, label: "Abre às", widget: string, hint: "Formato 08:00" }, { name: fecha, label: "Fecha às", widget: string, hint: "Formato 19:00" }, { name: fechado, label: "Fechado neste dia?", widget: boolean, default: false, required: false }] }
+          - { name: ceo_nome, label: "Nome da CEO", widget: string }
+          - { name: nota_garantia, label: "Observação da garantia (rodapé)", widget: string }
+          - { name: rodape_texto, label: "Texto do rodapé", widget: text }
+          - { name: seo_titulo, label: "Título no Google e na aba do navegador", widget: string }
+          - { name: seo_descricao, label: "Descrição no Google (até 160 caracteres)", widget: text }
+          - { name: site_url, label: "Endereço do site", widget: string, hint: "Ex.: https://itrend.vercel.app (sem barra no final)" }
+      - name: inicio
+        label: "🏠 Topo do site"
+        file: content/inicio.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta", widget: string }
+          - { name: titulo_marca, label: "Título: nome (primeira linha)", widget: string }
+          - { name: titulo_destaque, label: "Título: frase em destaque", widget: string }
+          - { name: marcas, label: "Marcas (linha abaixo do título)", widget: list, field: { name: item, label: "Texto", widget: string } }
+          - { name: texto, label: "Texto de apresentação", widget: text }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+          - { name: botao_instagram, label: "Texto do botão do Instagram", widget: string }
+          - { name: selos, label: "Selos abaixo dos botões", widget: list, summary: "{{fields.texto}}", fields: [{ name: icone, label: "Ícone", widget: select, options: [{ label: "Celular", value: "i-mobile" }, { label: "Cartão", value: "i-card" }, { label: "Boleto", value: "i-barcode" }, { label: "Ferramenta", value: "i-wrench" }, { label: "Fone", value: "i-headphone" }, { label: "Aproximação (NFC)", value: "i-nfc" }, { label: "Coração", value: "i-heart" }, { label: "Escudo", value: "i-shield" }, { label: "Raio", value: "i-bolt" }, { label: "Câmera", value: "i-camera" }, { label: "Chip", value: "i-chip" }, { label: "Tela", value: "i-screen" }, { label: "Bateria", value: "i-battery" }, { label: "Tomada / conector", value: "i-plug" }, { label: "Vidro traseiro", value: "i-back" }, { label: "Câmera frontal", value: "i-selfie" }, { label: "Lente", value: "i-lens" }, { label: "Alto-falante", value: "i-speaker" }, { label: "Microfone", value: "i-mic" }, { label: "Botões", value: "i-button" }, { label: "Água", value: "i-drop" }, { label: "Troca", value: "i-swap" }, { label: "Brilho", value: "i-sparkle" }, { label: "Ímã", value: "i-magnet" }, { label: "Estrela", value: "i-star" }, { label: "Check", value: "i-check" }, { label: "Relógio", value: "i-clock" }, { label: "Pino de mapa", value: "i-pin" }] }, { name: texto, label: "Texto", widget: string }] }
+          - { name: chips, label: "Etiquetas flutuantes ao lado do logo (até 3)", widget: list, summary: "{{fields.destaque}} {{fields.texto}}", fields: [{ name: destaque, label: "Destaque", widget: string }, { name: texto, label: "Texto", widget: string }] }
+          - { name: chamadas, label: "Cartões de destaque abaixo do topo", widget: list, summary: "{{fields.titulo}}", fields: [{ name: icone, label: "Ícone", widget: select, options: [{ label: "Celular", value: "i-mobile" }, { label: "Cartão", value: "i-card" }, { label: "Boleto", value: "i-barcode" }, { label: "Ferramenta", value: "i-wrench" }, { label: "Fone", value: "i-headphone" }, { label: "Aproximação (NFC)", value: "i-nfc" }, { label: "Coração", value: "i-heart" }, { label: "Escudo", value: "i-shield" }, { label: "Raio", value: "i-bolt" }, { label: "Câmera", value: "i-camera" }, { label: "Chip", value: "i-chip" }, { label: "Tela", value: "i-screen" }, { label: "Bateria", value: "i-battery" }, { label: "Tomada / conector", value: "i-plug" }, { label: "Vidro traseiro", value: "i-back" }, { label: "Câmera frontal", value: "i-selfie" }, { label: "Lente", value: "i-lens" }, { label: "Alto-falante", value: "i-speaker" }, { label: "Microfone", value: "i-mic" }, { label: "Botões", value: "i-button" }, { label: "Água", value: "i-drop" }, { label: "Troca", value: "i-swap" }, { label: "Brilho", value: "i-sparkle" }, { label: "Ímã", value: "i-magnet" }, { label: "Estrela", value: "i-star" }, { label: "Check", value: "i-check" }, { label: "Relógio", value: "i-clock" }, { label: "Pino de mapa", value: "i-pin" }] }, { name: titulo, label: "Título", widget: string }, { name: texto, label: "Texto", widget: string }] }
+      - name: celulares
+        label: "📱 Celulares"
+        file: content/celulares.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: lista, label: "Lista com check", widget: list, summary: "{{fields.destaque}} {{fields.texto}}", fields: [{ name: destaque, label: "Parte em negrito", widget: string }, { name: texto, label: "Resto da frase", widget: string }] }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+          - { name: foto_vitrine, label: "Foto ao lado do texto", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_vitrine_descricao, label: "Descrição da foto", widget: string }
+          - { name: selo_foto, label: "Selo sobre a foto", widget: string }
+          - { name: marcas, label: "Cartões das marcas", widget: list, summary: "{{fields.nome}}", fields: [{ name: tag, label: "Etiqueta", widget: string }, { name: nome, label: "Marca", widget: string }, { name: texto, label: "Texto", widget: text }] }
+          - { name: titulo_carrossel, label: "Título do carrossel", widget: string }
+          - { name: carrossel, label: "Carrossel de celulares", widget: list, summary: "{{fields.nome}} · {{fields.detalhe}}", hint: "Arraste para mudar a ordem. Use + para adicionar.", fields: [{ name: foto, label: "Foto", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }, { name: nome, label: "Nome do produto", widget: string }, { name: detalhe, label: "Detalhe curto (aparece ao lado do nome)", widget: string }, { name: descricao_foto, label: "Descrição da foto", widget: string, hint: "Para acessibilidade e Google: descreva o que aparece na foto." }] }
+      - name: boleto
+        label: "🧾 Compra no boleto"
+        file: content/boleto.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: itens, label: "Itens", widget: list, summary: "{{fields.titulo}}", fields: [{ name: icone, label: "Ícone", widget: select, options: [{ label: "Celular", value: "i-mobile" }, { label: "Cartão", value: "i-card" }, { label: "Boleto", value: "i-barcode" }, { label: "Ferramenta", value: "i-wrench" }, { label: "Fone", value: "i-headphone" }, { label: "Aproximação (NFC)", value: "i-nfc" }, { label: "Coração", value: "i-heart" }, { label: "Escudo", value: "i-shield" }, { label: "Raio", value: "i-bolt" }, { label: "Câmera", value: "i-camera" }, { label: "Chip", value: "i-chip" }, { label: "Tela", value: "i-screen" }, { label: "Bateria", value: "i-battery" }, { label: "Tomada / conector", value: "i-plug" }, { label: "Vidro traseiro", value: "i-back" }, { label: "Câmera frontal", value: "i-selfie" }, { label: "Lente", value: "i-lens" }, { label: "Alto-falante", value: "i-speaker" }, { label: "Microfone", value: "i-mic" }, { label: "Botões", value: "i-button" }, { label: "Água", value: "i-drop" }, { label: "Troca", value: "i-swap" }, { label: "Brilho", value: "i-sparkle" }, { label: "Ímã", value: "i-magnet" }, { label: "Estrela", value: "i-star" }, { label: "Check", value: "i-check" }, { label: "Relógio", value: "i-clock" }, { label: "Pino de mapa", value: "i-pin" }] }, { name: titulo, label: "Título", widget: string }, { name: texto, label: "Texto", widget: string }] }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+          - { name: foto, label: "Imagem", widget: image, hint: "Imagem recortada (fundo transparente) funciona melhor aqui. PNG com transparência é mantido sem recorte.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_descricao, label: "Descrição da imagem", widget: string }
+          - { name: selo_foto, label: "Selo sobre a imagem", widget: string }
+      - name: upgrade
+        label: "🔄 Faça um upgrade"
+        file: content/upgrade.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: lista, label: "Lista com check", widget: list, summary: "{{fields.destaque}} {{fields.texto}}", fields: [{ name: destaque, label: "Parte em negrito", widget: string }, { name: texto, label: "Resto da frase", widget: string }] }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+          - { name: flyer, label: "Flyer", widget: image, hint: "O flyer aparece inteiro, sem recorte.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: flyer_descricao, label: "Descrição do flyer", widget: string }
+      - name: acessorios
+        label: "🎧 Acessórios"
+        file: content/acessorios.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: grupos, label: "Carrosséis de acessórios", widget: list, summary: "{{fields.titulo}}", fields: [{ name: titulo, label: "Título do carrossel", widget: string }, { name: itens, label: "Produtos", widget: list, summary: "{{fields.nome}} · {{fields.detalhe}}", hint: "Arraste para mudar a ordem. Use + para adicionar.", fields: [{ name: foto, label: "Foto", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }, { name: nome, label: "Nome do produto", widget: string }, { name: detalhe, label: "Detalhe curto (aparece ao lado do nome)", widget: string }, { name: descricao_foto, label: "Descrição da foto", widget: string, hint: "Para acessibilidade e Google: descreva o que aparece na foto." }] }] }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+      - name: capas
+        label: "📲 Capinhas"
+        file: content/capas.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: pilulas, label: "Destaques (até 3)", widget: list, field: { name: item, label: "Texto", widget: string } }
+          - { name: itens, label: "Carrossel de capinhas", widget: list, summary: "{{fields.nome}} · {{fields.detalhe}}", hint: "Arraste para mudar a ordem. Use + para adicionar.", fields: [{ name: foto, label: "Foto", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }, { name: nome, label: "Nome do produto", widget: string }, { name: detalhe, label: "Detalhe curto (aparece ao lado do nome)", widget: string }, { name: descricao_foto, label: "Descrição da foto", widget: string, hint: "Para acessibilidade e Google: descreva o que aparece na foto." }] }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+      - name: videos
+        label: "🎬 Vídeos"
+        file: content/videos.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text, hint: "Escreva @itrendloja que vira link para o Instagram." }
+          - { name: videos, label: "Vídeos do carrossel", widget: list, summary: "{{fields.descricao}}", hint: "Arraste para mudar a ordem.", fields: [{ name: video, label: "Vídeo", widget: file, hint: "MP4 vertical, até 50 MB. O site tira o som, corta em 20 segundos e cria a capa.", choose_url: false, media_library: { config: { max_file_size: 50000000 } } }, { name: descricao, label: "Descrição curta", widget: string }] }
+      - name: assistencia
+        label: "🔧 Assistência técnica"
+        file: content/assistencia.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+          - { name: foto, label: "Imagem", widget: image, hint: "PNG com fundo transparente é mantido sem recorte.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_descricao, label: "Descrição da imagem", widget: string }
+          - { name: selo_1, label: "Selo 1", widget: string }
+          - { name: selo_2, label: "Selo 2", widget: string }
+          - { name: servicos, label: "Serviços", widget: list, summary: "{{fields.titulo}}", fields: [{ name: icone, label: "Ícone", widget: select, options: [{ label: "Celular", value: "i-mobile" }, { label: "Cartão", value: "i-card" }, { label: "Boleto", value: "i-barcode" }, { label: "Ferramenta", value: "i-wrench" }, { label: "Fone", value: "i-headphone" }, { label: "Aproximação (NFC)", value: "i-nfc" }, { label: "Coração", value: "i-heart" }, { label: "Escudo", value: "i-shield" }, { label: "Raio", value: "i-bolt" }, { label: "Câmera", value: "i-camera" }, { label: "Chip", value: "i-chip" }, { label: "Tela", value: "i-screen" }, { label: "Bateria", value: "i-battery" }, { label: "Tomada / conector", value: "i-plug" }, { label: "Vidro traseiro", value: "i-back" }, { label: "Câmera frontal", value: "i-selfie" }, { label: "Lente", value: "i-lens" }, { label: "Alto-falante", value: "i-speaker" }, { label: "Microfone", value: "i-mic" }, { label: "Botões", value: "i-button" }, { label: "Água", value: "i-drop" }, { label: "Troca", value: "i-swap" }, { label: "Brilho", value: "i-sparkle" }, { label: "Ímã", value: "i-magnet" }, { label: "Estrela", value: "i-star" }, { label: "Check", value: "i-check" }, { label: "Relógio", value: "i-clock" }, { label: "Pino de mapa", value: "i-pin" }] }, { name: titulo, label: "Serviço", widget: string }, { name: texto, label: "Descrição curta", widget: string }] }
+      - name: clientes
+        label: "😊 Clientes"
+        file: content/clientes.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: lista, label: "Lista com check", widget: list, summary: "{{fields.destaque}} {{fields.texto}}", fields: [{ name: destaque, label: "Parte em negrito", widget: string }, { name: texto, label: "Resto da frase", widget: string }] }
+          - { name: botao, label: "Texto do botão", widget: string }
+          - { name: mensagem_whatsapp, label: "Mensagem que já vem escrita no WhatsApp", widget: string }
+          - { name: foto_destaque, label: "Foto grande", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_destaque_descricao, label: "Descrição da foto grande", widget: string }
+          - { name: selo_foto, label: "Selo sobre a foto grande", widget: string }
+          - { name: foto_2, label: "Foto menor 1", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_2_descricao, label: "Descrição da foto menor 1", widget: string }
+          - { name: foto_3, label: "Foto menor 2", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_3_descricao, label: "Descrição da foto menor 2", widget: string }
+          - { name: titulo_carrossel, label: "Título do carrossel", widget: string }
+          - { name: carrossel, label: "Carrossel de clientes", widget: list, summary: "{{fields.descricao_foto}}", hint: "Arraste para mudar a ordem. Use + para adicionar.", fields: [{ name: foto, label: "Foto", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }, { name: descricao_foto, label: "Descrição da foto", widget: string }] }
+      - name: ceo
+        label: "👩‍💼 CEO"
+        file: content/ceo.json
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: citacao, label: "Citação", widget: text }
+          - { name: citacao_rodape, label: "Assinatura da citação", widget: string }
+          - { name: cargo, label: "Cargo (abaixo do nome)", widget: string }
+          - { name: foto, label: "Foto principal", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_descricao, label: "Descrição da foto principal", widget: string }
+          - { name: foto_pequena, label: "Foto pequena (sobreposta)", widget: image, required: false, choose_url: false }
+          - { name: foto_pequena_descricao, label: "Descrição da foto pequena", widget: string }
+          - { name: pilulas, label: "Etiquetas", widget: list, field: { name: item, label: "Texto", widget: string } }
+      - name: contato
+        label: "📞 Contato e pagamento"
+        file: content/contato.json
+        fields:
+          - { name: logo_linhas, label: "Linhas abaixo do logo", widget: list, field: { name: item, label: "Texto", widget: string } }
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: pagamentos, label: "Formas de pagamento", widget: list, summary: "{{fields.texto}}", fields: [{ name: icone, label: "Ícone", widget: select, options: [{ label: "Celular", value: "i-mobile" }, { label: "Cartão", value: "i-card" }, { label: "Boleto", value: "i-barcode" }, { label: "Ferramenta", value: "i-wrench" }, { label: "Fone", value: "i-headphone" }, { label: "Aproximação (NFC)", value: "i-nfc" }, { label: "Coração", value: "i-heart" }, { label: "Escudo", value: "i-shield" }, { label: "Raio", value: "i-bolt" }, { label: "Câmera", value: "i-camera" }, { label: "Chip", value: "i-chip" }, { label: "Tela", value: "i-screen" }, { label: "Bateria", value: "i-battery" }, { label: "Tomada / conector", value: "i-plug" }, { label: "Vidro traseiro", value: "i-back" }, { label: "Câmera frontal", value: "i-selfie" }, { label: "Lente", value: "i-lens" }, { label: "Alto-falante", value: "i-speaker" }, { label: "Microfone", value: "i-mic" }, { label: "Botões", value: "i-button" }, { label: "Água", value: "i-drop" }, { label: "Troca", value: "i-swap" }, { label: "Brilho", value: "i-sparkle" }, { label: "Ímã", value: "i-magnet" }, { label: "Estrela", value: "i-star" }, { label: "Check", value: "i-check" }, { label: "Relógio", value: "i-clock" }, { label: "Pino de mapa", value: "i-pin" }] }, { name: texto, label: "Texto", widget: string }] }
+          - { name: banner_titulo, label: "Faixa do Instagram: título", widget: string }
+          - { name: banner_texto, label: "Faixa do Instagram: texto", widget: text }
+          - { name: banner_botao, label: "Faixa do Instagram: botão", widget: string }
+      - name: localizacao
+        label: "📍 Localização"
+        file: content/localizacao.json
+        description: "O endereço e o horário ficam em Dados da loja e horário."
+        fields:
+          - { name: etiqueta, label: "Etiqueta (texto pequeno acima do título)", widget: string }
+          - { name: titulo, label: "Título", widget: string }
+          - { name: destaque, label: "Parte do título em destaque (colorida)", widget: string, hint: "Aparece logo depois do título, em azul e laranja." }
+          - { name: foto_fachada, label: "Foto da fachada", widget: image, hint: "Foto vertical de preferência. O site recorta automaticamente na proporção certa (3:4) e otimiza.", choose_url: false, media_library: { config: { max_file_size: 15000000 } } }
+          - { name: foto_fachada_descricao, label: "Descrição da foto", widget: string }
+      - name: final
+        label: "✅ Chamada final"
+        file: content/final.json
+        fields:
+          - { name: titulo, label: "Título", widget: string }
+          - { name: texto, label: "Texto", widget: text }
+          - { name: botao_1, label: "Botão 1", widget: string }
+          - { name: mensagem_1, label: "Mensagem do botão 1", widget: string }
+          - { name: botao_2, label: "Botão 2", widget: string }
+          - { name: mensagem_2, label: "Mensagem do botão 2", widget: string }

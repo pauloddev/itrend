@@ -70,11 +70,29 @@ itrend/
 | Lista de serviços da assistência | `public/index.html`, seção `#assistencia` | Os 12 serviços são os mais comuns em assistência de celular. Confira com a loja e ajuste o que não for oferecido. |
 | Telefone da fachada | foto `loja-fachada` | A placa mostra (83); o site usa (95) 99138-3639, como informado. |
 
-## 5. Publicação
+## 6. Painel de administração (/admin)
+
+A cliente edita textos, fotos, vídeos e horário em `https://SEU-SITE/admin`. Cada alteração vira um commit no GitHub e o Vercel publica sozinho em ~1 minuto.
+
+* Conteúdo: `content/*.json` (um arquivo por seção). Não editar `public/index.html`: ele é gerado por `npm run build`.
+* Fotos enviadas pelo painel vão para `public/uploads/`; o build recorta em 3:4 (foco automático) e gera AVIF, WebP e JPG. PNG com transparência não é recortado.
+* Vídeos enviados: o build tira o som, corta em 20 s e cria a capa.
+* Textos por cima das fotos não são removidos automaticamente: suba a foto já limpa.
+
+### Login com e-mail e senha (DecapBridge)
+1. GitHub → Settings → Developer settings → Personal access tokens → Fine-grained → Generate. Repository access: só `pauloddev/itrend`. Permissions: **Contents: Read and write**. Copie o token.
+2. Crie a conta em decapbridge.com → Add site: provider GitHub, repositório `pauloddev/itrend`, o token, Login URL `https://SEU-SITE/admin/index.html`, auth type **Classic** (e-mail e senha).
+3. O DecapBridge mostra um `config.yml`. Copie **só o bloco `backend:`** dele e cole no lugar do bloco `backend:` de `public/admin/config.yml` (mantenha o resto). Commit e push.
+4. Em "Manage collaborators", convide o e-mail da cliente. Ela recebe o link, cria a senha e entra em `/admin`.
+
+### Testar o painel no seu computador
+`npm install`, depois `npx decap-server` em um terminal e `npx serve public` em outro; abra `http://localhost:3000/admin/` (com `local_backend: true`, edita os arquivos locais sem login).
+
+## 7. Publicação
 
 **a. Vercel via GitHub**
 1. Crie um repositório no GitHub e envie esta pasta inteira (`git init`, `git add .`, `git commit`, `git push`).
-2. No Vercel: *Add New → Project → Import* o repositório. Framework Preset: **Other**. Não precisa de build. O `vercel.json` já indica a pasta `public`.
+2. No Vercel: *Add New → Project → Import* o repositório. Framework Preset: **Other**. O `vercel.json` já define o build (`npm run build`) e a pasta `public`.
 3. Clique em **Deploy**.
 
 **b. Trocar a URL**

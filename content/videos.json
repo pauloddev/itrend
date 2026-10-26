@@ -1,0 +1,76 @@
+{
+  "etiqueta": "iTrend em movimento",
+  "titulo": "Vem ver de perto",
+  "destaque": "o que chegou.",
+  "texto": "Novidades da loja em vídeo. Siga @itrendloja para não perder nenhuma.",
+  "videos": [
+    {
+      "video": "/video/video-01.mp4",
+      "descricao": "Vídeo 1 da iTrend"
+    },
+    {
+      "video": "/video/video-02.mp4",
+      "descricao": "Vídeo 2 da iTrend"
+    },
+    {
+      "video": "/video/video-03.mp4",
+      "descricao": "Vídeo 3 da iTrend"
+    },
+    {
+      "video": "/video/video-04.mp4",
+      "descricao": "Vídeo 4 da iTrend"
+    },
+    {
+      "video": "/video/video-05.mp4",
+      "descricao": "Vídeo 5 da iTrend"
+    },
+    {
+      "video": "/video/video-06.mp4",
+      "descricao": "Vídeo 6 da iTrend"
+    },
+    {
+      "video": "/video/video-07.mp4",
+      "descricao": "Vídeo 7 da iTrend"
+    },
+    {
+      "video": "/video/video-08.mp4",
+      "descricao": "Vídeo 8 da iTrend"
+    },
+    {
+      "video": "/video/video-09.mp4",
+      "descricao": "Vídeo 9 da iTrend"
+    },
+    {
+      "video": "/video/video-10.mp4",
+      "descricao": "Vídeo 10 da iTrend"
+    },
+    {
+      "video": "/video/video-11.mp4",
+      "descricao": "Vídeo 11 da iTrend"
+    },
+    {
+      "video": "/video/video-12.mp4",
+      "descricao": "Vídeo 12 da iTrend"
+    },
+    {
+      "video": "/video/video-13.mp4",
+      "descricao": "Vídeo 13 da iTrend"
+    },
+    {
+      "video": "/video/video-14.mp4",
+      "descricao": "Vídeo 14 da iTrend"
+    },
+    {
+      "video": "/video/video-15.mp4",
+      "descricao": "Vídeo 15 da iTrend"
+    },
+    {
+      "video": "/video/video-16.mp4",
+      "descricao": "Vídeo 16 da iTrend"
+    },
+    {
+      "video": "/video/video-17.mp4",
+      "descricao": "Vídeo 17 da iTrend"
+    }
+  ]
+}

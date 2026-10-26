@@ -1,0 +1,75 @@
+{
+  "etiqueta": "Smartphones",
+  "titulo": "Variedades em celulares",
+  "destaque": "você encontra aqui.",
+  "texto": "Do lançamento ao custo-benefício: iPhone, Xiaomi e Samsung lado a lado na vitrine, com atendimento de quem entende para você escolher o aparelho certo para o seu uso e para o seu bolso.",
+  "lista": [
+    {
+      "destaque": "Garantia de 1 ano",
+      "texto": "em aparelhos selecionados."
+    },
+    {
+      "destaque": "Até 21x no cartão",
+      "texto": ", débito, aproximação ou boleto."
+    },
+    {
+      "destaque": "Entregas para toda a cidade",
+      "texto": "de Boa Vista."
+    }
+  ],
+  "botao": "Quero meu celular novo",
+  "mensagem_whatsapp": "Olá, iTrend! Quero comprar um celular.",
+  "foto_vitrine": "/img/celulares/vitrine-celulares-600.jpg",
+  "foto_vitrine_descricao": "Vitrine da iTrend com vários modelos de iPhone expostos",
+  "selo_foto": "Vitrine iTrend",
+  "marcas": [
+    {
+      "tag": "Premium",
+      "nome": "Apple",
+      "texto": "iPhone com design, câmeras incríveis e desempenho de ponta."
+    },
+    {
+      "tag": "Potência e câmera",
+      "nome": "Xiaomi",
+      "texto": "Xiaomi, Redmi e Poco: muita tecnologia pelo melhor valor."
+    },
+    {
+      "tag": "Para todo uso",
+      "nome": "Samsung",
+      "texto": "A linha Galaxy para quem quer qualidade no dia a dia."
+    }
+  ],
+  "titulo_carrossel": "Chegou na iTrend",
+  "carrossel": [
+    {
+      "foto": "/img/celulares/celular-01-600.jpg",
+      "nome": "iPhone",
+      "detalhe": "Preto e azul",
+      "descricao_foto": "Atendente da iTrend mostrando duas caixas de iPhone, preto e azul"
+    },
+    {
+      "foto": "/img/celulares/celular-02-600.jpg",
+      "nome": "Xiaomi Redmi",
+      "detalhe": "Potência e bateria",
+      "descricao_foto": "Atendente segurando a caixa de um Redmi 17"
+    },
+    {
+      "foto": "/img/celulares/celular-03-600.jpg",
+      "nome": "iPhone",
+      "detalhe": "Azul",
+      "descricao_foto": "Atendente mostrando a caixa de um iPhone azul"
+    },
+    {
+      "foto": "/img/celulares/celular-04-600.jpg",
+      "nome": "iPhone Pro",
+      "detalhe": "Várias cores",
+      "descricao_foto": "Atendente segurando quatro caixas de iPhone Pro em cores diferentes"
+    },
+    {
+      "foto": "/img/celulares/celular-05-600.jpg",
+      "nome": "iPhone",
+      "detalhe": "Meia-noite",
+      "descricao_foto": "Atendente mostrando a caixa de um iPhone meia-noite"
+    }
+  ]
+}

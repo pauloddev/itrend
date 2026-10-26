@@ -1,0 +1,30 @@
+{
+  "logo_linhas": [
+    "📱 Smartphones • Acessórios • Consertos",
+    "✨ iTrend, conecte-se com o futuro"
+  ],
+  "etiqueta": "Contato oficial",
+  "titulo": "Fale com a iTrend",
+  "destaque": "do seu jeito.",
+  "pagamentos": [
+    {
+      "icone": "i-card",
+      "texto": "Crédito em até 21x"
+    },
+    {
+      "icone": "i-card",
+      "texto": "Cartão de débito"
+    },
+    {
+      "icone": "i-nfc",
+      "texto": "Aproximação (NFC)"
+    },
+    {
+      "icone": "i-barcode",
+      "texto": "Boleto bancário"
+    }
+  ],
+  "banner_titulo": "Siga @itrendloja",
+  "banner_texto": "Novidades, lançamentos e ofertas em primeira mão no Instagram.",
+  "banner_botao": "Seguir no Instagram"
+}

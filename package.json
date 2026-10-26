@@ -1,9 +1,19 @@
 {
   "name": "itrend-landing",
   "private": true,
-  "version": "1.0.0",
-  "description": "Landing page iTrend (site estático para Vercel)",
+  "version": "2.0.0",
+  "description": "Landing page iTrend com painel de administração (Decap CMS)",
+  "type": "module",
+  "engines": { "node": ">=20" },
   "scripts": {
-    "set-url": "node scripts/set-site-url.mjs"
+    "build": "node build/build.mjs",
+    "set-url": "node scripts/set-site-url.mjs",
+    "admin-local": "npx decap-server"
+  },
+  "dependencies": {
+    "sharp": "0.34.5"
+  },
+  "optionalDependencies": {
+    "ffmpeg-static": "5.2.0"
   }
 }

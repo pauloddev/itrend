@@ -214,8 +214,8 @@
       const mins = (Number(get('hour')) % 24) * 60 + Number(get('minute'));
       const row = hours.querySelector(`[data-day="${dayIdx}"]`);
       if (row) row.classList.add('today');
-      const close = dayIdx === 0 ? 12 * 60 + 30 : dayIdx === 6 ? 18 * 60 + 30 : 19 * 60; // dom. até 12:30, sáb. até 18:30, seg. a sex. até 19:00 (sem fechar para almoço)
-      const open = mins >= 8 * 60 && mins < close;
+      // horários vêm do painel (data-open / data-close em minutos)
+      const open = !!row && row.dataset.open != null && mins >= Number(row.dataset.open) && mins < Number(row.dataset.close);
       const st = hours.querySelector('[data-status]');
       st.textContent = open ? 'Aberto agora' : 'Fechado agora';
       st.classList.add(open ? 'open' : 'closed');

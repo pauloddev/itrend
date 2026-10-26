@@ -1,0 +1,69 @@
+{
+  "etiqueta": "Capinhas",
+  "titulo": "Variedades em capas",
+  "destaque": "pra todo estilo.",
+  "texto": "Personalizadas, anti-impacto e MagSafe. Do básico ao brilho, a capinha certa para proteger e combinar com você.",
+  "pilulas": [
+    "Personalizadas",
+    "Anti-impacto",
+    "MagSafe"
+  ],
+  "itens": [
+    {
+      "foto": "/img/capas/capa-glitter-600.jpg",
+      "nome": "Glitter",
+      "detalhe": "Brilho no detalhe",
+      "descricao_foto": "Três capas com glitter nas embalagens"
+    },
+    {
+      "foto": "/img/capas/capa-magsafe-cores-600.jpg",
+      "nome": "MagSafe",
+      "detalhe": "Cores lisas",
+      "descricao_foto": "Duas capas MagSafe, roxa e bege"
+    },
+    {
+      "foto": "/img/capas/capa-ventosa-600.jpg",
+      "nome": "Ventosas",
+      "detalhe": "Gruda em qualquer lugar",
+      "descricao_foto": "Capa rosa com ventosas"
+    },
+    {
+      "foto": "/img/capas/capa-transparente-magsafe-600.jpg",
+      "nome": "Transparente",
+      "detalhe": "Com MagSafe",
+      "descricao_foto": "Capa transparente com anel MagSafe"
+    },
+    {
+      "foto": "/img/capas/capa-fume-600.jpg",
+      "nome": "Anti-impacto",
+      "detalhe": "Bordas reforçadas",
+      "descricao_foto": "Duas capas fumê anti-impacto"
+    },
+    {
+      "foto": "/img/capas/capa-holografica-600.jpg",
+      "nome": "Holográfica",
+      "detalhe": "Tons pastel",
+      "descricao_foto": "Capa holográfica em tons pastel"
+    },
+    {
+      "foto": "/img/capas/capa-coracoes-600.jpg",
+      "nome": "Corações 3D",
+      "detalhe": "Relevo",
+      "descricao_foto": "Capa verde com corações em relevo"
+    },
+    {
+      "foto": "/img/capas/capa-silicone-600.jpg",
+      "nome": "Silicone",
+      "detalhe": "Toque macio",
+      "descricao_foto": "Capa de silicone marrom"
+    },
+    {
+      "foto": "/img/capas/capa-magsafe-suporte-600.jpg",
+      "nome": "MagSafe com suporte",
+      "detalhe": "Apoio na mesa",
+      "descricao_foto": "Capa MagSafe com suporte na câmera"
+    }
+  ],
+  "botao": "Escolher minha capinha",
+  "mensagem_whatsapp": "Olá, iTrend! Quero ver os modelos de capinha."
+}

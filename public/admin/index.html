@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Painel iTrend</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url">
+  <style>
+    /* tela de login com a cara da iTrend */
+    body { background: #f4f3ff; }
+    [class*="AuthenticationPage"] img, [class*="LoginPage"] img { content: url(/img/logo-itrend.svg); width: 180px; height: auto; }
+  </style>
+</head>
+<body>
+  <script src="https://unpkg.com/decap-cms@3.16.3/dist/decap-cms.js"></script>
+  <script>
+    // Português no painel
+    if (window.CMS) {
+      CMS.registerPreviewStyle('/styles.css');
+    }
+  </script>
+</body>
+</html>

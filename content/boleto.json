@@ -1,0 +1,33 @@
+{
+  "etiqueta": "Novidade na iTrend",
+  "titulo": "Agora dá pra comprar seu celular",
+  "destaque": "no boleto bancário 😍",
+  "texto": "A iTrend acaba de facilitar pra você! Sem complicação, sem cartão, do seu jeito e com a qualidade de sempre! 💙🧡 Corre garantir o seu e vem pra iTrend.",
+  "itens": [
+    {
+      "icone": "i-barcode",
+      "titulo": "Boleto bancário",
+      "texto": "Compra sem cartão."
+    },
+    {
+      "icone": "i-card",
+      "titulo": "Até 21x",
+      "texto": "No cartão de crédito."
+    },
+    {
+      "icone": "i-nfc",
+      "titulo": "Aproximação",
+      "texto": "Pague por NFC."
+    },
+    {
+      "icone": "i-heart",
+      "titulo": "Do seu jeito",
+      "texto": "Com a qualidade de sempre."
+    }
+  ],
+  "botao": "Quero comprar no boleto",
+  "mensagem_whatsapp": "Olá, iTrend! Quero comprar meu celular no boleto.",
+  "foto": "/img/celulares-boleto-600.png",
+  "foto_descricao": "Celulares Poco ao lado de um boleto bancário",
+  "selo_foto": "Novidade"
+}

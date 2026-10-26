@@ -1,0 +1,20 @@
+{
+  "etiqueta": "Troca facilitada",
+  "titulo": "Faça um",
+  "destaque": "upgrade.",
+  "texto": "Troque seu celular antigo por um novo. Traga o seu aparelho, a gente avalia e te ajuda a sair com o modelo que você quer.",
+  "lista": [
+    {
+      "destaque": "Seu usado ajuda",
+      "texto": "na compra do novo."
+    },
+    {
+      "destaque": "Avaliação na hora",
+      "texto": ", na loja ou pelo WhatsApp."
+    }
+  ],
+  "botao": "Quero fazer upgrade",
+  "mensagem_whatsapp": "Olá, iTrend! Quero fazer upgrade e trocar meu celular antigo por um novo.",
+  "flyer": "/img/flyer-upgrade-600.jpg",
+  "flyer_descricao": "Flyer iTrend: Faça um upgrade. Troque seu celular antigo por um novo. Telefone (95) 99138-3639"
+}

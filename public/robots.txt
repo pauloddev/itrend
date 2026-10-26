@@ -1,5 +1,0 @@
-# SITE_URL: troque o domínio abaixo pelo link de produção (ou rode: node scripts/set-site-url.mjs https://seu-projeto.vercel.app)
-User-agent: *
-Allow: /
-
-Sitemap: https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/sitemap.xml

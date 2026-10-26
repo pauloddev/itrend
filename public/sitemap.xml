@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- SITE_URL: troque o domínio abaixo pelo link de produção (ou rode: node scripts/set-site-url.mjs https://seu-projeto.vercel.app) -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app/</loc>
-    <lastmod>2026-10-26</lastmod>
-  </url>
-</urlset>

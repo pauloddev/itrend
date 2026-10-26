@@ -1,0 +1,66 @@
+{
+  "nome_loja": "iTrend",
+  "site_url": "https://TROCAR-PELO-LINK-DO-VERCEL.vercel.app",
+  "seo_titulo": "iTrend | Conecte-se com o Futuro! Celulares em Boa Vista",
+  "seo_descricao": "iPhone, Xiaomi e Samsung em Boa Vista (RR). Acessórios, capinhas e assistência técnica rápida. Até 21x no cartão ou no boleto. Fale no WhatsApp.",
+  "whatsapp": "5595991383639",
+  "telefone": "(95) 99138-3639",
+  "email": "Itrendloja@icloud.com",
+  "instagram": "itrendloja",
+  "mensagem_whatsapp": "Olá, iTrend! Vim pelo site e quero atendimento.",
+  "endereco_rua": "Av. General Ataíde Teive, 5138",
+  "endereco_complemento": "Tancredo Neves, Boa Vista, RR, 69313-520",
+  "endereco_mapa": "Avenida General Ataíde Teive, 5138, Tancredo Neves, Boa Vista - RR, 69313-520",
+  "cep": "69313-520",
+  "bairro": "Tancredo Neves",
+  "cidade": "Boa Vista",
+  "estado": "RR",
+  "aviso_horario": "Não fechamos para almoço, de segunda a sábado",
+  "horarios": [
+    {
+      "dia": "Segunda-feira",
+      "abre": "08:00",
+      "fecha": "19:00",
+      "fechado": false
+    },
+    {
+      "dia": "Terça-feira",
+      "abre": "08:00",
+      "fecha": "19:00",
+      "fechado": false
+    },
+    {
+      "dia": "Quarta-feira",
+      "abre": "08:00",
+      "fecha": "19:00",
+      "fechado": false
+    },
+    {
+      "dia": "Quinta-feira",
+      "abre": "08:00",
+      "fecha": "19:00",
+      "fechado": false
+    },
+    {
+      "dia": "Sexta-feira",
+      "abre": "08:00",
+      "fecha": "19:00",
+      "fechado": false
+    },
+    {
+      "dia": "Sábado",
+      "abre": "08:00",
+      "fecha": "18:30",
+      "fechado": false
+    },
+    {
+      "dia": "Domingo",
+      "abre": "08:00",
+      "fecha": "12:30",
+      "fechado": false
+    }
+  ],
+  "ceo_nome": "Monalysa Freitas",
+  "nota_garantia": "*Garantia de 1 ano em aparelhos selecionados.",
+  "rodape_texto": "📱 Smartphones • Acessórios • Consertos. 📲 Xiaomi • Apple • Samsung. 💳 Até 21x no cartão."
+}
